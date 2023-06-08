@@ -15,6 +15,7 @@
  *
  *    (Relevant reading: 1.1.1. Defining classes)
  */
+
 public class Basics {
 
     /**
@@ -31,6 +32,7 @@ public class Basics {
      *
      *    (Relevant reading: 1.1.2. Defining methods)
      */
+
     public static void main(final String[] args) {
         /* 3. In Python, we could print out code using the print() function.
          *    In Java, we do the same thing by using System.out.println();
@@ -43,7 +45,7 @@ public class Basics {
         /* TODO (Task 1): Write a line of code below that prints the string
          *                Hello World!
          */
-
+        System.out.println(("Hello World!");
 
 
         /* 4. In Python, we could declare variables using a simple assignment
@@ -62,7 +64,7 @@ public class Basics {
          * TODO (Task 2): Create a variable named my_variable and assign it the
          *                value 100.
          */
-
+        int my_variable = 100;
 
 
         /* Do not remove the line below: if you did task 2 correctly, then
@@ -99,8 +101,10 @@ public class Basics {
          * Current count: 1
          * Current count: 0
          */
-
-
+        for (int count = 10; count >= 0; count--)
+        {
+            System.out.println("Current count: " + count);
+        }
     }
 
     /**
@@ -141,6 +145,13 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
+        String[] ret = to_split.split(" ");
+
+        ret.charat(1);
+
+
+
+
 
         // Fill in the rest of the body here
 
@@ -161,7 +172,8 @@ public class Basics {
      * @param arr    An array of integers
      * @return       The sum of all integers at odd indices in arr
      */
-    public static int oddSum(int[] arr) {
+    public static int oddSum(int[] arr)
+    {
         int current_sum = 0;
 
         /* TODO (Task 5): Complete this method body using a for-loop.
@@ -171,6 +183,12 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0)
+            { //for odd check.
+                current_sum = current_sum+ arr[i];
+            }
+        }
         return current_sum;
     }
 
