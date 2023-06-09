@@ -148,9 +148,9 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        String[] ret = to_split.split(" ");
+        String[] arr = to_split.split(" ");
 
-        ret.charat(1);
+        arr.charat(1);
 
 
 
@@ -158,7 +158,7 @@ public class Basics {
 
         // Fill in the rest of the body here
 
-        return ret.toString();
+        return arr.toString();
     }
 
     /**
