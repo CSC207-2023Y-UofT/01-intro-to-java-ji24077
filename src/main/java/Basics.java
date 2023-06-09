@@ -33,7 +33,8 @@ public class Basics {
      *    (Relevant reading: 1.1.2. Defining methods)
      */
 
-    public static void main(final String[] args) {
+    public static void main(final String[] args)
+    {
         /* 3. In Python, we could print out code using the print() function.
          *    In Java, we do the same thing by using System.out.println();
          *    In the line below, we print the result of 7 + 5
@@ -46,7 +47,7 @@ public class Basics {
          *                Hello World!
          */
 
-        System.out.println(("Hello World!");
+        System.out.println("Hello World!");
 
 
         /* 4. In Python, we could declare variables using a simple assignment
@@ -137,7 +138,8 @@ public class Basics {
      *                   spaces.
      * @return           The first letter of every word in to_split
      */
-    public static String split(String to_split) {
+    public static String split(String to_split)
+    {
         /* TODO (Task 4): Complete this method body.
          *                The String methods .split and .charAt may be helpful,
          *                along with the StringBuilder.append
