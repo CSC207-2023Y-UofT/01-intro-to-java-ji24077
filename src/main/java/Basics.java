@@ -181,13 +181,14 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 != 0)
-            { //for odd check.
-                current_sum = current_sum+ arr[i];
-            }
+
+        int current_sum = 0;
+        for (int i = 1; i < arr.length; i = i+2)
+        {
+            current_sum =  current_sum + arr[i];
         }
         return current_sum;
+
     }
 
 
