@@ -148,17 +148,12 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
-        String[] arr = to_split.split(" ");
-
-        arr.charat(1);
-
-
-
-
-
-        // Fill in the rest of the body here
-
-        return arr.toString();
+        String[] words = to_split.split(" ");
+        for(String word : words) //word in words
+        {
+            ret.append(word.charAt(0));
+        }
+        return ret.toString();
     }
 
     /**
